@@ -1,0 +1,86 @@
+<!doctype html><html lang='tr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>POPUP TAVAN KULLANIM TALİMATI</title><style>
+*{box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;margin:28px auto;max-width:980px;color:#0f172a;font-size:13px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:14px;margin:18px 0 6px;padding-bottom:4px;border-bottom:2px solid #2563eb;color:#1e3a8a}
+.firm{font-size:15px;font-weight:600;color:#334155;margin-bottom:10px}
+.sub{color:#64748b;margin-bottom:8px}
+.top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #0f172a;padding-bottom:10px}
+.meta{text-align:right;line-height:1.6}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #cbd5e1;padding:6px 8px;vertical-align:top;text-align:left}
+th{background:#f1f5f9;width:18%;font-weight:600}
+table.list th{width:auto}
+table.chk td{border:1px solid #cbd5e1;width:33%;font-size:14px}
+.box{border:1px solid #cbd5e1;min-height:48px;padding:8px}
+.warn{border:1px solid #fca5a5;background:#fef2f2;padding:8px;color:#991b1b}
+.sig{display:flex;gap:40px;margin-top:46px}
+.sig div{flex:1;border-top:1px solid #0f172a;padding-top:6px;text-align:center}
+.small{color:#475569;font-size:12px;margin-top:16px}
+img.step{max-width:220px;max-height:160px;border:1px solid #cbd5e1}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.photos img{width:100%;height:180px;object-fit:cover;border:1px solid #cbd5e1;break-inside:avoid}
+.pb{page-break-before:always;break-before:page}
+.talimat{border:1px solid #cbd5e1;padding:12px 14px;line-height:1.7;font-size:13.5px}
+.warn ul{margin:0;padding-left:18px} .warn li{margin:3px 0}
+.wrap{display:flex;gap:18px;align-items:flex-start}
+.wrap img{width:240px;max-height:330px;object-fit:cover;border:1px solid #cbd5e1;border-radius:4px;display:block}
+.wrap > div:first-child{break-inside:avoid}
+.cap{font-size:12px;color:#64748b;margin-top:4px;width:240px}
+ol.steps{padding-left:0;list-style:none;margin:0;flex:1}
+ol.steps li{position:relative;padding:8px 10px 8px 46px;border-bottom:1px solid #e2e8f0;line-height:1.55;break-inside:avoid}
+ol.steps li .n{position:absolute;left:6px;top:8px;width:28px;height:28px;border-radius:50%;background:#2563eb;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px}
+ol.steps li .t{display:block;font-weight:700}
+td.c{width:44px;text-align:center;font-size:18px}
+ul.bk li{margin:3px 0;line-height:1.55}
+h3{font-size:13.5px;margin:14px 0 6px;color:#1e3a8a;padding-bottom:3px;border-bottom:1px solid #bfdbfe}
+.kthead{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#0f172a;color:#fff;padding:9px 14px;border-radius:4px;margin-top:20px;break-after:avoid}
+.kthead b{font-size:15px;letter-spacing:.3px}
+.kthead span{display:block;font-size:12px;color:#cbd5e1}
+.ktmeta{font-size:12px;color:#cbd5e1;white-space:nowrap}
+.endsig{break-inside:avoid;margin-top:22px}
+table tr,.warn,.photos img{break-inside:avoid}
+h2,h3{break-after:avoid;page-break-after:avoid}
+.mrow{display:flex;align-items:flex-start}
+.mtxt{flex:1 1 auto;min-width:0;width:100%}
+.mimg{max-width:240px;max-height:260px;width:auto;height:auto;margin-left:14px;border:1px solid #cbd5e1;border-radius:4px;flex-shrink:0}
+ol.steps li .n{display:block;text-align:center;line-height:28px}
+.swarn{background:#fef2f2;border-left:3px solid #dc2626;color:#991b1b;padding:4px 8px;margin:6px 0;font-size:12.5px;font-weight:600}
+.schk{font-size:12.5px;color:#334155;margin-top:5px;background:#f8fafc;border:1px solid #e2e8f0;padding:4px 8px;border-radius:4px}
+.parca{font-size:12.5px;color:#1e3a8a;margin-top:4px}
+a{color:#1d4ed8;word-break:break-all}
+.photos figure{margin:0;break-inside:avoid}
+.photos figcaption{font-size:12px;color:#64748b;margin-top:4px}
+.noprint{margin-bottom:16px}
+.noprint button{background:#2563eb;color:#fff;border:0;padding:8px 18px;border-radius:6px;font-size:14px;cursor:pointer}
+.qr svg{display:block;width:100%;height:100%}
+.tqr{display:block;width:96px;margin:8px 0 0 auto;text-align:center}
+.tqr .qr{width:92px;height:92px;margin:0 auto}
+.tqr span,.ktqr span{display:block;font-size:10.5px;color:#64748b;margin-top:2px}
+.ktqr{background:#fff;padding:4px;border-radius:4px;text-align:center;margin-left:12px}
+.ktqr .qr{width:66px;height:66px}
+.ktqr span{color:#334155;font-size:9.5px}
+.labels{display:flex;flex-wrap:wrap}
+.label{width:90mm;height:55mm;border:1px dashed #94a3b8;margin:0 4mm 4mm 0;padding:4mm;display:flex;align-items:center;break-inside:avoid;page-break-inside:avoid}
+.label .lq{width:40mm;height:40mm;flex-shrink:0}
+.label .lt{margin-left:4mm;font-size:12px;line-height:1.35}
+.label .lt b{display:block;font-size:14px;margin:2px 0 4px}
+.label .lf{font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:.5px}
+.label .ls{color:#334155}
+.label .lk{margin-top:4px;font-size:10px;color:#94a3b8}
+.nav{margin-bottom:12px}.nav a{color:#2563eb;text-decoration:none;font-weight:600}
+.cards a.card{display:flex;align-items:center;border:1px solid #e2e8f0;border-radius:8px;padding:10px;margin:10px 0;color:#0f172a;text-decoration:none;background:#fff}
+.cards a.card img{width:84px;height:84px;object-fit:cover;border-radius:6px;margin-right:12px;flex-shrink:0}
+.cards a.card div{min-width:0;flex:1}
+.cards a.card b{display:block;font-size:16px}.cards a.card span{display:block;color:#64748b;font-size:13px;margin-top:2px}
+@media (max-width:700px){
+ body{margin:12px;font-size:15px}
+ .top{display:block}.meta{text-align:left;margin-top:6px}
+ .wrap{display:block}.wrap img,.cap{width:100%}.wrap img{max-height:65vh;object-fit:cover}
+ .mrow{display:block}.mimg{margin:8px 0 0;max-width:100%}
+ .photos{grid-template-columns:1fr 1fr}
+ h1{font-size:20px} ol.steps li{padding-left:42px}
+ th{width:auto}
+}
+@media print{.noprint{display:none} body{margin:0}}
+</style></head><body><div class='nav'><a href='index.html'>← Tüm talimatlar</a></div><div class='top'><div><h1>POPUP TAVAN KULLANIM TALİMATI</h1><div class='sub'>Kullanım Talimatı – A&#231;ılır Tavan (Popup Roof)</div></div><div class='meta'>Doküman: KT-POPUP-01<br>Revizyon: Rev.00<br>Tarih: 18.11.2026</div></div><h2>G&#252;venlik Uyarıları</h2><div class='warn'><ul><li><b>Tavan a&#231;ıkken veya kilitler takılı değilken ara&#231; kesinlikle hareket ettirilmemelidir.</b></li><li><b>DİKKAT: Tavanı kapatırken tavan kumaşının (k&#246;r&#252;k) kilit kısmına, yani mandal ile kilit braketinin arasına sıkışmamasına dikkat ediniz. Sıkışan kumaş yırtılır, kilit tam oturmaz ve tavan yolda a&#231;ılabilir.</b></li><li>Tavanı kapatmadan &#246;nce &#252;st yatakta ve tavan b&#246;l&#252;m&#252;nde kimse bulunmamalıdır.</li><li>Kapatırken elinizi ve parmaklarınızı tavan kenarı ile g&#246;vde arasına sokmayınız; sıkışma tehlikesi vardır.</li><li>Kuvvetli r&#252;zg&#226;rda tavanı a&#231;mayınız; a&#231;ıksa &#246;nce tavanı kapatınız.</li></ul></div><h2>Kapatma Adımları</h2><div class='wrap'><div><img src='img/KT-POPUP-01.jpg'><div class='cap'>Tavan kilit braketi ve mandalı. Mandal, tavan paneline vidalı braket &#252;zerindeki yuvaya oturur. <b>Kumaşın bu b&#246;lgeye sıkışmamasına dikkat edin.</b></div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>Aracı hazırlayın</span>Aracı d&#252;z bir zemine park edin, el frenini &#231;ekin. &#220;st yataktaki yastık, uyku tulumu vb. eşyaları alın; k&#246;r&#252;k kumaşına yaslanan bir şey kalmasın.</li><li><span class='n'>2</span><span class='t'>Pencere ve fermuarları kapatın</span>K&#246;r&#252;k kumaşındaki pencerelerin fermuarlarını ve sineklikleri tamamen kapatın.</li><li><span class='n'>3</span><span class='t'>Tavanı indirin</span>Tavanı i&#231; taraftaki tutamaktan / kayıştan tutarak yavaş&#231;a ve dengeli şekilde aşağı &#231;ekin. Amortis&#246;rlerin (gazlı piston) direncine karşı acele etmeden indirin.</li><li><span class='n'>4</span><span class='t'>Kumaşı i&#231;eri y&#246;nlendirin</span>Tavan inerken k&#246;r&#252;k kumaşını elinizle <b>i&#231;eri doğru</b> itin. Kumaş tavan kenarı ile g&#246;vde arasına, contaya veya kilit braketine <b>kesinlikle sıkışmamalıdır</b>.</li><li><span class='n'>5</span><span class='t'>&#214;n kilitleri takın</span>Kilitlemeden &#246;nce <b>tavan kumaşının mandal ve kilit braketi arasında kalmadığını kontrol edin</b>; kalmışsa kumaşı elinizle i&#231;eri doğru &#231;ekin. Ardından mandalın kancasını braketteki yuvaya ge&#231;irin ve mandal kolunu sonuna kadar bastırarak kilitleyin. Kilit gergin ve sağlam oturmalıdır.</li><li><span class='n'>6</span><span class='t'>Diğer kilitleri takın</span>Aynı işlemi diğer t&#252;m kilit noktalarında (sağ / sol, &#246;n / arka) tekrarlayın. Varsa kumaş toplama kayışlarını tokasına takın.</li><li><span class='n'>7</span><span class='t'>Son kontrol</span>Aracın &#231;evresinde dolaşarak tavanın her yerde eşit kapandığını, kumaşın dışarı taşmadığını ve contanın d&#252;zg&#252;n oturduğunu kontrol edin. İ&#231;eriden t&#252;m kilitlerin kapalı olduğunu bir kez daha kontrol edin.</li></ol></div><h2>Yola &#199;ıkmadan &#214;nce Kontrol Listesi</h2><table><tr><td class='c'>&#9744;</td><td>Tavan tamamen kapalı ve her noktada eşit oturuyor</td></tr><tr><td class='c'>&#9744;</td><td>T&#252;m tavan kilitleri takılı ve mandallar sonuna kadar bastırılmış</td></tr><tr><td class='c'>&#9744;</td><td><b>Tavan kumaşı kilit kısımlarına (mandal / braket) sıkışmamış</b></td></tr><tr><td class='c'>&#9744;</td><td>K&#246;r&#252;k kumaşı hi&#231;bir noktada sıkışmamış / dışarı taşmamış</td></tr><tr><td class='c'>&#9744;</td><td>Kumaş toplama kayışları tokalarına takılı</td></tr><tr><td class='c'>&#9744;</td><td>&#220;st yatakta serbest duran eşya yok</td></tr></table><h2>Bakım ve Uyarılar</h2><ul class='bk'><li><b>Islak kapatma:</b> Tavan yağmurda ıslak kapatıldıysa, en ge&#231; 24–48 saat i&#231;inde a&#231;arak kumaşı tamamen kurutunuz. Aksi halde k&#252;f ve koku oluşur.</li><li>Kilit mandallarının vidalarını ve braketlerini periyodik olarak kontrol ediniz; gevşeklik varsa sıkınız veya servise başvurunuz.</li><li>Contaları silikon bazlı conta bakım &#252;r&#252;n&#252; ile yılda en az iki kez bakımlayınız.</li><li>Kumaşı sert fır&#231;a, basın&#231;lı su veya &#231;&#246;z&#252;c&#252; ile temizlemeyiniz; ılık su ve yumuşak sabun kullanınız.</li><li>Tavanın zor kapanması, kilidin oturmaması veya amortis&#246;rlerde zayıflama fark ederseniz servise başvurunuz.</li></ul></body></html>

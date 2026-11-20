@@ -1,0 +1,101 @@
+<!doctype html><html lang='tr'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>KONTROL PANELİ KULLANIM TALİMATI</title><style>
+*{box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;margin:28px auto;max-width:980px;color:#0f172a;font-size:13px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:14px;margin:18px 0 6px;padding-bottom:4px;border-bottom:2px solid #2563eb;color:#1e3a8a}
+.firm{font-size:15px;font-weight:600;color:#334155;margin-bottom:10px}
+.sub{color:#64748b;margin-bottom:8px}
+.top{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:3px solid #0f172a;padding-bottom:10px}
+.meta{text-align:right;line-height:1.6}
+table{border-collapse:collapse;width:100%}
+td,th{border:1px solid #cbd5e1;padding:6px 8px;vertical-align:top;text-align:left}
+th{background:#f1f5f9;width:18%;font-weight:600}
+table.list th{width:auto}
+table.chk td{border:1px solid #cbd5e1;width:33%;font-size:14px}
+.box{border:1px solid #cbd5e1;min-height:48px;padding:8px}
+.warn{border:1px solid #fca5a5;background:#fef2f2;padding:8px;color:#991b1b}
+.sig{display:flex;gap:40px;margin-top:46px}
+.sig div{flex:1;border-top:1px solid #0f172a;padding-top:6px;text-align:center}
+.small{color:#475569;font-size:12px;margin-top:16px}
+img.step{max-width:220px;max-height:160px;border:1px solid #cbd5e1}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.photos img{width:100%;height:300px;object-fit:contain;background:#f8fafc;border:1px solid #cbd5e1;break-inside:avoid}
+.pb{page-break-before:always;break-before:page}
+.talimat{border:1px solid #cbd5e1;padding:12px 14px;line-height:1.7;font-size:13.5px}
+.warn ul{margin:0;padding-left:18px} .warn li{margin:3px 0}
+.wrap{display:flex;gap:18px;align-items:flex-start}
+.wrap img{width:240px;max-height:440px;object-fit:contain;border:1px solid #cbd5e1;border-radius:4px;display:block}
+.wrap > div:first-child{break-inside:avoid}
+.cap{font-size:12px;color:#64748b;margin-top:4px;width:240px}
+.wrap.wide{display:block}.wrap.wide img{width:100%;max-width:640px;max-height:none}.wrap.wide .cap{width:auto;max-width:640px;margin-bottom:8px;font-size:13px}
+ol.steps{padding-left:0;list-style:none;margin:0;flex:1}
+ol.steps li{position:relative;padding:8px 10px 8px 46px;border-bottom:1px solid #e2e8f0;line-height:1.55;break-inside:avoid}
+ol.steps li .n{position:absolute;left:6px;top:8px;width:28px;height:28px;border-radius:50%;background:#2563eb;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:13px}
+ol.steps li .t{display:block;font-weight:700}
+td.c{width:44px;text-align:center;font-size:18px}
+ul.bk li{margin:3px 0;line-height:1.55}
+h3{font-size:13.5px;margin:14px 0 6px;color:#1e3a8a;padding-bottom:3px;border-bottom:1px solid #bfdbfe}
+.kthead{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#0f172a;color:#fff;padding:9px 14px;border-radius:4px;margin-top:20px;break-after:avoid}
+.kthead b{font-size:15px;letter-spacing:.3px}
+.kthead span{display:block;font-size:12px;color:#cbd5e1}
+.ktmeta{font-size:12px;color:#cbd5e1;white-space:nowrap}
+.endsig{break-inside:avoid;margin-top:22px}
+table tr,.warn,.photos img{break-inside:avoid}
+h2,h3{break-after:avoid;page-break-after:avoid}
+.mrow{display:flex;align-items:flex-start}
+.mtxt{flex:1 1 auto;min-width:0;width:100%}
+.mimg{max-width:330px;max-height:460px;width:auto;height:auto;margin-left:14px;border:1px solid #cbd5e1;border-radius:4px;flex-shrink:0}
+ol.steps li .n{display:block;text-align:center;line-height:28px}
+.swarn{background:#fef2f2;border-left:3px solid #dc2626;color:#991b1b;padding:4px 8px;margin:6px 0;font-size:12.5px;font-weight:600}
+.schk{font-size:12.5px;color:#334155;margin-top:5px;background:#f8fafc;border:1px solid #e2e8f0;padding:4px 8px;border-radius:4px}
+.parca{font-size:12.5px;color:#1e3a8a;margin-top:4px}
+a{color:#1d4ed8;word-break:break-all}
+.brand{display:flex;align-items:center;margin-bottom:12px}
+.brand img{height:64px;width:auto}
+.brand span{margin-left:14px;padding-left:14px;border-left:1px solid #cbd5e1;font-weight:600;color:#334155;font-size:14px}
+table.chk2 td{width:50%;padding:7px 9px;font-size:13px}
+table.chk2 .cb{font-size:16px;margin-right:4px}
+.qrcards{display:flex;flex-wrap:wrap}
+.qrcard{display:flex;align-items:center;border:1px solid #cbd5e1;border-radius:6px;padding:8px 12px 8px 8px;margin:0 10px 10px 0;width:300px;break-inside:avoid}
+.qrcard .qq{width:84px;height:84px;flex-shrink:0;margin-right:10px}
+.qrcard b{display:block;font-size:13px}.qrcard span{display:block;font-size:11px;color:#64748b;margin-top:2px}
+.kapwrap{display:block}
+.kapsvg{width:100%;margin-bottom:10px;break-inside:avoid}
+.kaplist{flex:1;min-width:0}
+.legend{margin-top:4px}.legend span{display:inline-block;margin:2px 10px 2px 0;font-size:11px;color:#334155}
+.legend i{display:inline-block;width:12px;height:12px;border:1px solid #94a3b8;margin-right:4px;vertical-align:-2px}
+.photos figure{margin:0;break-inside:avoid}
+.photos figcaption{font-size:12px;color:#64748b;margin-top:4px}
+.noprint{margin-bottom:16px}
+.noprint button{background:#2563eb;color:#fff;border:0;padding:8px 18px;border-radius:6px;font-size:14px;cursor:pointer}
+.qr svg{display:block;width:100%;height:100%}
+.tqr{display:block;width:96px;margin:8px 0 0 auto;text-align:center}
+.tqr .qr{width:92px;height:92px;margin:0 auto}
+.tqr span,.ktqr span{display:block;font-size:10.5px;color:#64748b;margin-top:2px}
+.ktqr{background:#fff;padding:4px;border-radius:4px;text-align:center;margin-left:12px}
+.ktqr .qr{width:66px;height:66px}
+.ktqr span{color:#334155;font-size:9.5px}
+.labels{display:flex;flex-wrap:wrap}
+.label{width:90mm;height:55mm;border:1px dashed #94a3b8;margin:0 4mm 4mm 0;padding:4mm;display:flex;align-items:center;break-inside:avoid;page-break-inside:avoid}
+.label .lq{width:40mm;height:40mm;flex-shrink:0}
+.label .lt{margin-left:4mm;font-size:12px;line-height:1.35}
+.label .lt b{display:block;font-size:14px;margin:2px 0 4px}
+.label .lf{font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:.5px}
+.label .ls{color:#334155}
+.label .lk{margin-top:4px;font-size:10px;color:#94a3b8}
+.nav{margin-bottom:12px}.nav a{color:#2563eb;text-decoration:none;font-weight:600}
+.cards a.card{display:flex;align-items:center;border:1px solid #e2e8f0;border-radius:8px;padding:10px;margin:10px 0;color:#0f172a;text-decoration:none;background:#fff}
+.cards a.card img{width:84px;height:84px;object-fit:cover;border-radius:6px;margin-right:12px;flex-shrink:0}
+.cards a.card div{min-width:0;flex:1}
+.cards a.card b{display:block;font-size:16px}.cards a.card span{display:block;color:#64748b;font-size:13px;margin-top:2px}
+@media (max-width:700px){
+ body{margin:12px;font-size:15px}
+ .top{display:block}.meta{text-align:left;margin-top:6px}
+ .wrap{display:block}.wrap img,.cap{width:100%}.wrap img{max-height:65vh;object-fit:cover}
+ .mrow{display:block}.mimg{margin:8px 0 0;max-width:100%}
+ .photos{grid-template-columns:1fr 1fr}
+ h1{font-size:20px} ol.steps li{padding-left:42px}
+ th{width:auto}
+}
+@media print{.noprint{display:none} body{margin:0}}
+</style></head><body><div class='brand'><img src='data:image/png;base64,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' alt='Demonte Caravan'></div><div class='nav'><a href='index.html'>← Tüm talimatlar</a></div><div class='top'><div><h1>KONTROL PANELİ KULLANIM TALİMATI</h1><div class='sub'>Octoopi Van B &#183; dokunmatik kontrol paneli (aydınlatma, priz, su, ak&#252;)</div></div><div class='meta'>Doküman: KT-OCTOOPI-01<br>Revizyon: Rev.01<br>Tarih: 20.11.2026</div></div><h2>G&#252;venlik Uyarıları</h2><div class='warn'><ul><li><b>DİKKAT: <b>Ekrana parmağınızla hafif&#231;e dokunun.</b> Kalem, tırnak veya sivri bir cisim kullanmayın; ekrana bastırmayın.</b></li><li><b>DİKKAT: Panelin, kabloların ve kutuların i&#231;ini a&#231;mayın, kendiniz onarmaya &#231;alışmayın. Arıza durumunda servise başvurun.</b></li><li>Ekranı ıslak elle kullanmayın, &#252;zerine su sı&#231;ratmayın.</li><li>Temizlik i&#231;in yalnızca kuru ve yumuşak bir bez kullanın; sıvı veya kimyasal temizleyici kullanmayın.</li><li>Ekran kırılır veya &#231;atlarsa kırık par&#231;alara dokunmayın, servise başvurun.</li><li>Ani sıcaklık ve nem değişimlerinde ekranda buğu oluşabilir; dokunmatik bir s&#252;re yavaş tepki verebilir.</li></ul></div><h2>A – A&#231;ma ve Ana Ekran</h2><div class='wrap wide'><div><img src='img/KT-OCTOOPI-01.png'><div class='cap'>Ana ekran: ak&#252; gerilimleri, su depoları ve sık kullanılan kanallar.</div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>A&#231;ma</span>Paneldeki <b>a&#231;ma/kapama tuşuna</b> basın. &#214;nce Octoopi logosu g&#246;r&#252;n&#252;r, birka&#231; saniye sonra <b>ana ekran</b> a&#231;ılır.</li><li><span class='n'>2</span><span class='t'>Ak&#252; gerilimleri</span>Sol &#252;stteki iki g&#246;sterge <b>servis ak&#252;s&#252;</b> ve <b>marş ak&#252;s&#252;</b> gerilimini g&#246;sterir. Yeşil iyi, sarı orta, kırmızı d&#252;ş&#252;k demektir.</li><li><span class='n'>3</span><span class='t'>Su depoları</span>Sağ &#252;stteki damlalar <b>temiz su</b> (mavi) ve <b>kirli su</b> (kırmızı) deposunun doluluk y&#252;zdesini g&#246;sterir.</li><li><span class='n'>4</span><span class='t'>Kanallar</span>Alt sıradaki butonlara <b>dokunarak</b> buzdolabı, hidrofor ve aydınlatma gibi cihazları a&#231;ıp kapatın.</li><li><span class='n'>5</span><span class='t'>Ekranlar arası ge&#231;iş</span>Ekranı <b>sağa veya sola kaydırarak</b> sırasıyla Ana ekran → &#199;ıkış Kontrol → Giriş İzleme → Ak&#252; Durumu ekranlarına ge&#231;in.</li></ol></div><h2>B – &#199;ıkış Kontrol (buton) Ekranı</h2><div class='wrap wide'><div><img src='img/KT-OCTOOPI-01_2.png'><div class='cap'>&#199;ıkış Kontrol ekranı: butonun rengi kanalın durumunu g&#246;sterir.</div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>A&#231;ma / kapama</span>İstediğiniz kanalın butonuna <b>bir kez dokunun</b>; tekrar dokununca kapanır.</li><li><span class='n'>2</span><span class='t'>Renkleri okuyun</span><b>Yeşil</b>: a&#231;ık, cihaz &#231;alışıyor (akım &#231;ekiyor). <b>Mavi</b>: a&#231;ık ama cihaz akım &#231;ekmiyor. <b>Gri</b>: kapalı. <b>Kırmızı</b>: hata var, kanal kapatıldı.</li><li><span class='n'>3</span><span class='t'>Kanallar</span><b>İ&#231; aydınlatma</b>, <b>dış aydınlatma</b>, <b>USB şarj ve &#231;akmak prizleri</b>, <b>mutfak aydınlatması</b>, <b>TV prizi</b>, <b>ısıtıcı kumandası</b>, <b>havalandırma</b> ve <b>dış priz</b>. Kanal adları aracınızdaki donanıma g&#246;re değişebilir.</li><li><span class='n'>4</span><span class='t'>Isıtıcı</span>Isıtıcının kendisi panelden a&#231;ılmaz. Panel yalnızca <b>ısıtıcı kumandasına</b> elektrik verir; ısıtıcıyı kendi kumandasından kullanın.</li></ol></div><h2>C – Ak&#252; Durumu Ekranı</h2><div class='wrap wide'><div><img src='img/KT-OCTOOPI-01_3.png'><div class='cap'>Ak&#252; Durumu ekranı.</div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>Gerilimler</span>Ekranda <b>servis ak&#252;s&#252;</b> (solda) ve <b>marş ak&#252;s&#252;</b> (sağda) gerilimleri b&#252;y&#252;k olarak g&#246;r&#252;n&#252;r.</li><li><span class='n'>2</span><span class='t'>Toplam t&#252;ketim</span>Ortadaki değer, kanallardan &#231;ekilen <b>toplam akımı (A)</b> g&#246;sterir.</li><li><span class='n'>3</span><span class='t'>Ak&#252; birleştirme</span>Ortada <b>beyaz ok simgesi</b> g&#246;r&#252;n&#252;yorsa ak&#252;ler birbirine bağlıdır ve birlikte şarj olur. Birleştirme ve ayırma sistem tarafından <b>otomatik</b> yapılır; ak&#252;ler bağlı değilse bu simge g&#246;r&#252;nmez.</li></ol></div><h2>D – Giriş İzleme Ekranı</h2><div class='wrap wide'><div><img src='img/KT-OCTOOPI-01_4.png'><div class='cap'>Giriş İzleme ekranı: yalnızca bilgi verir, dokunarak bir şey değiştirilmez.</div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>Bilgi ekranı</span>Bu ekran yalnızca bilgi verir; dokunarak bir şey a&#231;ılıp kapanmaz.</li><li><span class='n'>2</span><span class='t'>G&#246;stergeler</span>&#220;st sıradaki kutucuklar, ara&#231;taki fiziksel d&#252;ğmelerden birine basıldığında <b>maviye d&#246;ner</b>. Alt sıradaki yuvarlak g&#246;stergeler sens&#246;r değerlerini g&#246;sterir.</li></ol></div><h2>E – Ayarlar ve Dil</h2><div class='wrap wide'><div><img src='img/KT-OCTOOPI-01_5.png'><div class='cap'>Ayarlar ekranına ana ekrandaki &#231;ark simgesinden girilir.</div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>Ayarlara girin</span>Ana ekranın sağ &#252;st&#252;ndeki <b>&#231;ark simgesine</b> dokunun.</li><li><span class='n'>2</span><span class='t'>Ekran parlaklığı</span>Kaydırma &#231;ubuğuyla parlaklığı ayarlayın; değişiklik ekranda hemen g&#246;r&#252;n&#252;r.</li><li><span class='n'>3</span><span class='t'>Ekran koruyucu</span>Ekranın ka&#231; dakika dokunulmadığında kararacağını se&#231;in (30 saniye ile 4 saat arası). Kararan ekrana dokunmak yalnızca ekranı a&#231;ar, hi&#231;bir cihazı a&#231;ıp kapatmaz.</li><li><span class='n'>4</span><span class='t'>Sesli hata uyarısı</span>Kutucuğu işaretlerseniz uyarı &#231;ıktığında <b>uyarı sesi</b> de &#231;alar. Ses, uyarıyı kapatana kadar devam eder.</li><li><span class='n'>5</span><span class='t'>Dil</span>Sağ &#252;stteki <b>bayrak simgesine</b> dokunun, T&#252;rk&#231;e veya English&#39;i se&#231;in.</li><li><span class='n'>6</span><span class='t'>Kaydedin</span>Değişikliklerin kalıcı olması i&#231;in <b>Kaydet</b>&#39;e basın. <b>&#199;ıkış</b> değişiklikleri iptal eder. Sağ &#252;stteki <b>&quot;i&quot;</b> simgesi cihaz bilgilerini g&#246;sterir.</li></ol></div><h2>F – Uyarılar ve Kapatma</h2><div class='wrap wide'><div><img src='img/KT-OCTOOPI-01_6.png'><div class='cap'>Kapatma onayı: <b>Evet</b> cihazı kapatır, <b>Ertele</b> &#246;nceki ekrana d&#246;ner.</div></div><ol class='steps'><li><span class='n'>1</span><span class='t'>Uyarı ekranı</span>Bir sorun olduğunda ekranda kırmızı veya turuncu bir <b>uyarı</b> a&#231;ılır. Uyarı kapatılmadan başka işlem yapılamaz. Uyarıyı okuyup gerekeni yapın, sonra <b>Tamam</b>&#39;a basın.</li><li><span class='n'>2</span><span class='t'>Su uyarıları</span><b>Temiz su deposu boşaldığında</b> uyarı &#231;ıkar ve depo dolmadan <b>hidrofor &#231;alışmaz</b>. <b>Kirli su deposu %90&#39;ı ge&#231;ince</b> boşaltma uyarısı &#231;ıkar.</li><li><span class='n'>3</span><span class='t'>Kanal hatası</span>Bir kanalda kısa devre veya aşırı y&#252;k olursa kanal kendini kapatır ve adını yazan bir uyarı &#231;ıkar. Butonu kırmızı g&#246;r&#252;n&#252;r. İlgili cihazı kontrol edin; tekrar ediyorsa servise başvurun.</li><li><span class='n'>4</span><span class='t'>D&#252;ş&#252;k ak&#252;</span>Servis ak&#252;s&#252; <b>11 V&#39;un altına</b> d&#252;şerse cihaz kapatma uyarısı verir. <b>Ertele</b> derseniz uyarı 10 dakika sonra yeniden gelir. Ak&#252; <b>10,5 V&#39;un altına</b> inerse panel kendini kapatır. Ak&#252;y&#252; şarj edin.</li><li><span class='n'>5</span><span class='t'>Kapatma</span>Paneldeki <b>a&#231;ma/kapama tuşuna</b> basın ve <b>Evet</b>&#39;i se&#231;in. Isıtıcı kumandası a&#231;ıksa ısıtıcının soğuması i&#231;in panel yaklaşık <b>90 saniye</b> bekleyip &#246;yle kapanır.</li><li><span class='n'>6</span><span class='t'>Haberleşme hatası</span>&quot;Haberleşme hatası&quot; uyarısı &#231;ıkarsa bekleyin; panel kendini yeniden başlatır. Uyarı s&#252;rerse servise başvurun.</li></ol></div><h2>Kullanımdan &#214;nce Kontrol Listesi</h2><table><tr><td class='c'>&#9744;</td><td>Servis ak&#252;s&#252; g&#246;stergesi yeşil veya sarı (12 V &#252;zeri)</td></tr><tr><td class='c'>&#9744;</td><td><b>Temiz su deposu dolu</b>; kirli su deposu boşaltılmış</td></tr><tr><td class='c'>&#9744;</td><td>Kullanılmayan kanallar kapalı (gri)</td></tr><tr><td class='c'>&#9744;</td><td>Kırmızı (hatalı) kanal veya a&#231;ık uyarı yok</td></tr><tr><td class='c'>&#9744;</td><td>Ara&#231;tan ayrılırken panel kapatıldı</td></tr></table><h2>Bakım ve Uyarılar</h2><ul class='bk'><li>Aracı uzun s&#252;re kullanmayacaksanız paneli kapatın ve ak&#252;leri şarjda tutun.</li><li>Ak&#252; gerilimi sık sık d&#252;ş&#252;yorsa, ak&#252;n&#252;z&#252;n ve şarj sisteminizin kontrol&#252; i&#231;in servise başvurun.</li><li>Kablo, sigorta ve bağlantı kutularına m&#252;dahale etmeyin; t&#252;m onarımlar yetkili servis tarafından yapılmalıdır.</li></ul><h2>Fotoğraflar</h2><div class='photos'><figure><img src='img/KT-OCTOOPI-01_7.png'><figcaption>Kirli su deposu dolu uyarısı: depoyu boşaltın, sonra <b>Tamam</b>&#39;a basın.</figcaption></figure><figure><img src='img/KT-OCTOOPI-01_8.png'><figcaption>Kanal hatası uyarısı: ilgili cihazı kapatın, sorun s&#252;rerse servise başvurun.</figcaption></figure><figure><img src='img/KT-OCTOOPI-01_9.png'><figcaption>Dil se&#231;imi: Ayarlar ekranındaki bayrak simgesinden a&#231;ılır.</figcaption></figure></div></body></html>
